@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <!--Ask user if he/she is valid to play the game-->
+    <div id="askAge">
+        <h1>Are you over 18?</h1>
+        <p> </p>
+        <div id="answer">
+            <button id="yes">YES</button>
+            <button id="no" onclick="warning()"> NO </button>
+        </div>
+        <p id="kid"></p>
+
+    </div>
+    
+    <!--Game-->
+    <div id="main">
+        <h1>BlackJack</h1>
+        <h2 id="result"> </h2>
+        <h2 id="card">Cards: </h2>
+        <h2 id="computerCard">Computer Cards: </h2>
+    
+        <div class="button">
+            <button id="start" onclick="startGame()">Start Game</button>
+            <button id="draw" onclick="drawCard()">Draw a card</button>
+            <button id="show" onclick="showDown()">Show Down</button>
+            <button onclick="nextRound()">Next Round</button>
+            <button id="history">History</button>
+        </div>
+
+       
+
+    </div>
+
+    <!--Historical data-->
+    <div id="historyData">
+            <div class="header">
+                <h1>History</h1>
+                <i class="fas fa-angle-double-left" id="exitHistory"></i>
+            </div>
+
+           <div class="historicalInfo">
+                <h3 id="displayData"></h3>    
+                <h3 id="timePlay"></h3>
+           </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"> </script>
+</body>
+</html>
